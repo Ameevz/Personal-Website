@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html website="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Rodwil Russel T. Tolento | Web Developer Portfolio</title>
+  <meta name="description" content="Personal website of Your Name.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&amp;family=Public+Sans:wght@400;600&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="#top">Rodwil Russel T. Tolento</a>
+      <button class="site-header__toggle" type="button"
+              aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#projects">Projects</a></li>
+          <li><a class="site-nav__link" href="#about">About</a></li>
+          <li><a class="site-nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="container">
+      <h1 class="hero__title" id="hero-title">
+        <span class="hero__line">Hi, I'm</span>
+        <span class="hero__line hero__line--name">Rodwil</span>
+      </h1>
+      <p class="hero__lead">I’m a 3rd-year Computer Science student who enjoys coding, web development, and exploring new technologies. I’m constantly learning and building projects that turn ideas into practical digital solutions.</p>
+      <p class="hero__actions">
+        <a class="button button--primary" href="#projects">Projects</a>
+        <a class="button" href="#contact">Get in touch</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 class="section__title" id="projects-title">Projects</h2>
+        <div class="empty-state">
+          <p class="empty-state__title">Projects are on the way.</p>
+          <p class="empty-state__text">I'm still building my first projects. Check back soon, or get in touch if you'd like to work together.</p>
+          <p><a class="button" href="#contact">Say hello</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <figure class="about__figure">
+          <img class="about__image" src="assets/IMG_20261003_225354_629.jpg" width="480" height="600">
+        </figure>
+        <div class="about__body">
+          <h2 class="section__title" id="about-title">About me</h2>
+          <p>I am a 3rd-year Computer Science student with a passion for technology, programming, and web development. I enjoy creating websites and applications while continuously improving my coding and problem-solving skills. My goal is to gain more experience in the field of technology and build projects that are useful, creative, and meaningful.</p>
+          <h3 class="about__subtitle">Interests</h3>
+          <ul class="chips">
+            <li class="chips__item">Gaming</li>
+            <li class="chips__item">Music</li>
+            <li class="chips__item">Programming & Technology</li>
+            <li class="chips__item">Sleeping</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="contact__info">
+          <h2 class="section__title" id="contact-title">Contact me</h2>
+          <p>Have a project, an internship, or a question? Send a message and I'll reply within two business days.</p>
+          <address class="contact__details">
+            <p><a href="mailto:you@example.com">rodwiltolento@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/your-handle">LinkedIn</a></p>
+            <p><a href="https://github.com/Ameevz">GitHub</a></p>
+          </address>
+        </div>
+
+        <form class="form" id="contact-form" action="mailto:you@example.com"
+              method="post" enctype="text/plain" novalidate>
+          <div class="form__field">
+            <label class="form__label" for="name">Name</label>
+            <input class="form__input" id="name" name="name" type="text" autocomplete="name" required>
+            <p class="form__error" id="name-error" role="alert"></p>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" id="email" name="email" type="email" autocomplete="email" required>
+            <p class="form__error" id="email-error" role="alert"></p>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="message">Message</label>
+            <textarea class="form__input form__input--area" id="message" name="message" rows="5" required></textarea>
+            <p class="form__error" id="message-error" role="alert"></p>
+          </div>
+          <button class="button button--primary" type="submit">Send message</button>
+          <p class="form__status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>&copy; <span id="year">2026</span> Rodwil</p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+</body>
+</html>
